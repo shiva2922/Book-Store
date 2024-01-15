@@ -1,0 +1,23 @@
+<html>
+   <head>
+    <link rel="stylesheet" href="../stylesheet/style.css">
+   </head>
+<body>
+    <%-include('header2')-%>
+    <form action="/del" method="post">
+
+        <br><br><br><br>
+        <h1>Are u sure you want to delete <i style="color: rgb(83, 172, 240);"><%=data.name%>(Rs <%=data.age%>
+            ) </i>book</h1>
+    
+       
+         
+         
+        
+    
+<input type="hidden" value="<%=data._id%>" name="id">
+
+<button class="btnn">Delete</button>
+</form>
+</body>
+</html>

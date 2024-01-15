@@ -1,0 +1,84 @@
+<html>
+<head>
+    <link rel="stylesheet" href="../stylesheet/style.css">
+</head>
+    <body>
+        <%-include('header2')-%>
+
+        
+
+   <!-- <tr>
+    <th>View</th>
+    <th>Update</th>
+    <th>Delete</th>
+    <th>Name</th>
+    <th>Age</th>
+    <th>Img</th>
+   </tr> -->
+
+
+ <%ans.forEach((i)=>{%>
+    
+    <div  class="card card-1">
+   
+    
+       <img src="<%=i.img%>" alt="" width="150" height="130" class="imgi"><br>
+
+     <b><%=i.name%></b>  <br>
+      Price:Rs <%=i.age%> <br> 
+     <button> <a href="/viewdata/<%=i._id%>">View</a> </button><br><br>
+    <a href="/updatedata/<%=i._id%>">Update</a>  
+    <a href="/deletedata/<%=i._id%>">Delete</a> 
+
+    <a href="/addcart/<%=i._id%>/<%=i.age%>/<%=i.name%>/<%= encodeURIComponent(i.img)%> ">Wishlist</a> <br>
+
+    <!-- <a href="/addcart/<%=i._id%>/<%=i.img%>/<%=i.name%>/<%=i.age%>">Addcart</a> <br>
+        -->
+  
+</div>
+ <%})%>
+
+
+    </body>
+</html>
+
+
+<style>
+/* body{
+    background-color: aquamarine;
+    display: flex;
+    float: left;
+    
+}
+.tab{
+    background-color: rgb(187, 187, 246);
+    margin-left: 50px;
+    margin-top: 70px;
+    width:200px;
+    height: 250px;
+    padding: 10px;
+
+   
+
+}
+
+ */
+ a{
+    text-decoration: none;
+    padding: 5px;
+ }
+
+ a:link {color:  #060235;}
+a:visited {color: #060235}
+a:hover {color: #fc0ca4}
+a:active {color:  #060235}
+
+button{
+    margin-top: 5px;
+    width:54px;
+    height:36px;
+    border-radius: 10px;
+    border:2px solid rgb(91, 91, 243);
+}
+ 
+</style>

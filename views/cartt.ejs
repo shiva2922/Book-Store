@@ -1,0 +1,62 @@
+<html>
+<head>
+    <link rel="stylesheet" href="../stylesheet/style.css">
+</head>
+    <body class="adpage">
+        <%-include('header2')-%>
+
+        
+
+   
+ <%ans.forEach((i)=>{%>
+    
+    <div  class="card card-1">
+   
+    
+       <img src="<%=i.img%>" alt="" width="120" height="130" class="imgi"><br>
+
+     <h3><%=i.name%> </h3> <br>
+      Price:<%=i.age%> <br> <br>
+      
+    
+
+   
+   <button><a href="/cartdel/<%=i._id%>">remove</a> <br> </button> 
+  
+</div>
+ <%})%>
+
+
+    </body>
+</html>
+
+
+
+
+
+
+
+
+<style>
+
+a{
+    text-decoration: none;
+    padding: 15px;
+ }
+ 
+
+ 
+button{
+    
+    width:74px;
+    height:36px;
+    border-radius: 10px;
+    border:2px solid rgb(91, 91, 243);
+}
+
+
+
+body{
+    background-color: rgb(80, 78, 78);
+}
+</style>

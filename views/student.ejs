@@ -1,0 +1,55 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="../stylesheet/style.css">
+</head>
+<%-include('header2')-%>
+    <body>
+        
+        <!-- <table border="1">
+            <tr>
+                <td>Name</td>
+                <td><%=data.name%></td>
+            </tr>
+
+            <tr>
+                <td>Price</td>
+                <td><%=data.age%></td>
+            </tr>
+
+        </table> -->
+
+
+        <!-- //-------------
+         -->
+
+        
+            <div  class="card card-1 card-2">
+                <h3><%=data.name%> </h3> 
+    <br>
+                <img src="<%=data.img%>" alt="" width="250" height="180"><br>
+         <br>
+             
+           <h4>Rs<%=data.age%> </h4>  
+           
+           <br><br>
+            <b>Summary:</b>  
+               <br><br>
+               
+               <%=data.summary%>
+             
+         
+          
+    
+           
+         </div>
+
+
+
+
+
+
+
+
+    </body>
+</html>
